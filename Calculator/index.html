@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheet CSS -->
+    <link rel="Stylesheet" href="style.css">
+    <!-- Responsive webpage CSS -->
+    <link rel="Stylesheet" href ="rsponsive.css">
+	<title>Calculator</title>
+</head>
+<body>
+    <!-- Nav Bar starts -->
+    <nav class="navigation-bar">
+      <div class= "web-title">
+        <div class ="logo">
+            <img src = "resources/calculator_icon.png">
+        </div>
+            <div class = "title">
+                <h3> Ninja </h3> 
+                <h5>
+                Calculator
+            </h5>
+        </div>
+        <div class="theme">
+            <label class="switch">
+                <input type="checkbox" checked onclick="light()">
+                <span class="slider"></span>
+              </label>
+              <div><h5>Theme</h5></div>
+        </div>
+      </div>
+      </nav>
+      <!-- Nav Bar ends -->
+
+      <!-- Calculator screen starts -->
+     
+        
+        <div  class="calc-area ">
+            <div class="area">
+                <div class ="heading-area">
+                <h2>CALCULATOR</h2>
+                </div>
+            </div>
+            <!-- Display box -->
+            <div clas="dispalys">
+                <input type = "text" id ="dis_op" class = "output" readonly   >
+            </div>
+
+            <!-- keypad -->
+            <div class = "keyboard">
+            <div class = "key left" >
+                <div>
+                <button class="button"  onclick="Allclear()" data-value="">AC</button>
+                <button class="button" id="button_negative" data-value="+/-">+/-</button>
+                <button class="button " id ="button_percentage" data-value="%">%</button>
+                </div>
+                <div>
+                <button class="button " id =" button7" data-value="7">7</button>
+                <button class="button " id =" button8" data-value="8">8</button>
+                <button class="button " id =" button9" data-value="9">9</button>
+            </div>
+                <button class="button " id =" button4" data-value="4">4</button>
+                <button class="button " id =" button5" data-value="5">5</button>
+                <button class="button " id =" button6" data-value="6">6</button>
+            <div>
+                <button class="button " id =" button1" data-value="1">1</button>
+                <button class="button " id =" button2" data-value="2">2</button>
+                <button class="button " id =" button3" data-value="3">3</button>
+                
+                <button class="button button0" data-value="0">0</button>
+                <button class="button " id =" button_dot" data-value=".">.</button>
+                    
+            </div>
+            
+            </div>
+           
+            <div class="key right">
+                <button class="button operator" data-value="/">/</button>
+                <button class="button operator" data-value="*">*</button>
+                <button class="button operator" data-value="-">-</button>
+                <button class="button operator" data-value="+">+</button>
+                <button class="button operator" onclick="calculates()" data-value='='>=</button>
+                
+                </div>
+                </div>
+        </div>
+        
+            
+     
+<!-- Calculator screen ends -->
+</body>
+<script src = "script.js"></script>
+</html>

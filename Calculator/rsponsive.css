@@ -1,0 +1,35 @@
+@media screen and (max-width : 900px) {
+    .navigation-bar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+    }
+    .main{
+       overflow: hidden;
+        width :10% !important;
+        
+    }
+}
+@media screen and (max-width: 700px){
+    .navigation-bar{
+        
+        float: center;
+    }
+    
+    
+    
+}
+@media screen and (max-width: 550px){
+    .navigation-bar{
+    
+       visibility: visible;
+    }
+   .main{
+   width: 0%;
+    overflow: hidden;
+   }
+}
+       
+
+

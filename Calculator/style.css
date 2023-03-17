@@ -1,0 +1,233 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: white;
+  }
+/* animation for  texts */
+@keyframes animate {
+   
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    75% {
+        transform: scale(1.1);
+        }
+    100% {
+        transform: scaleX(1);
+    }
+  
+}
+  
+  
+/* Navigation Bar */
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #22224c;
+    height: auto;
+    width: auto;
+    align-items: baseline;
+    color : white;
+    justify-content: space-around;
+    align-items: center;
+   
+    border-bottom: 2px solid red;
+    
+}
+.theme{
+  padding-left: 20px;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+ 
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* navigation ends */
+
+
+/* website logo and title */
+.web-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.web-title .logo img{
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.web-title .title{
+    padding-left: 5px;
+}
+.web-title .title :hover{
+    color : red;
+   
+    animation-name: animate;
+    animation-timing-function: zoom-in-out;
+    animation-duration: 2s;
+    perspective: 10000px;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+    
+}
+/* website logo and title ends */
+body{
+    background-color: #22224c;
+    font-family: "Segoe UI", Arial, sans-serif;
+    position: relative;
+    
+}
+
+/* Main */
+
+/* calculator screen area */
+.calc-area{
+  
+  margin: 10vh auto;
+    display : block;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: grey;
+    height: 400px;
+    width : 400px;
+}
+/* calc heading */
+.heading-area{
+   
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.heading-area  :hover{
+  color: #4CAF50;
+}
+/* display box */
+.calc-area .output {
+    outline: none;
+    display: flex;
+    width :396px;
+    height : 50px;
+    text-align: end;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    font-size: large;
+}
+.calc-area .output :focus{
+    outline: none;
+}
+.area{
+    padding-top : 10px
+   
+}
+
+
+
+.button {
+    border: none;
+    height:auto;
+    width: 80px;
+    border: solid 1px;
+    color: white;
+    padding: 18px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: gray;
+  }
+  .button0 {
+    width:164.5px;
+  }
+  .button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .keyboard{
+    padding-top: 10px;
+  }
+  .key {
+    
+   
+    float: left;
+  }
+  
+  .left {
+    display: flex-inline;
+    justify-content: space-around;
+    width: 75%;
+    
+  }
+  
+  .right {
+    width: 25%;
+  }
+    
+ 
+
+ 
